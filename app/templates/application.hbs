@@ -1,8 +1,28 @@
 <div class="container">
-  {{price-counter}}
-  {{volume-counter}}
-  {{pump-screen}}
-  {{pump-keypad}}
-  {{pump-options}}
-  {{pump-hose}}
+  <div class="row">
+    <div class="col-md-6">
+      {{price-counter}}
+    </div>
+    <div class="col-md-6">
+      {{volume-counter}}
+    </div>
+  </div>
+  <div class="row">
+    {{pump-screen}}
+  </div>
+  <div class="row">
+    <div class="col-md-9">
+      <div class="row">
+        <div class="col-md-6">
+          {{pump-options}}
+        </div>
+         <div class="col-md-6">
+          {{pump-hose}}
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      {{pump-keypad}}
+    </div>
+  </div>
 </div>
