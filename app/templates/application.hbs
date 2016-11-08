@@ -18,6 +18,10 @@
         </div>
          <div class="col-md-6">
           {{pump-hose}}
+          {{pump-lift
+            liftPump=(action 'enablePump')}}
+          {{pump-nozzle
+            pumpEnabled=pumpEnabled}}
         </div>
       </div>
     </div>
