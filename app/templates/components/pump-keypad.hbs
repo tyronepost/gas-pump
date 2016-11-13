@@ -40,4 +40,18 @@
     9
   {{/bs-button}}
 </div>
+<div class="row">
+  {{#bs-button
+    action=(action 'cancel')}}
+    Cancel
+  {{/bs-button}}
+  {{#bs-button
+    action=(action 'enterZip' 0)}}
+    0
+  {{/bs-button}}
+  {{#bs-button
+    action=(action 'enter')}}
+    Enter
+  {{/bs-button}}
+</div>
 

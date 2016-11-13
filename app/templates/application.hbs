@@ -24,6 +24,7 @@
             liftPump=(action 'enablePump')}}
           {{pump-nozzle
             pumpEnabled=pumpEnabled}}
+            {{log pumpEnabled}}
         </div>
       </div>
     </div>
@@ -33,7 +34,9 @@
     </div>
     <div class="col-md-3">
       {{pump-keypad
-        enterZip=(action 'enterZip')}}
+        enterZip=(action 'enterZip')
+        enter=(action 'enter')
+        cancel=(action 'cancel')}}
     </div>
   </div>
 </div>
