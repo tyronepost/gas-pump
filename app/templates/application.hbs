@@ -8,7 +8,8 @@
     </div>
   </div>
   <div class="row">
-    {{pump-screen}}
+    {{pump-screen
+      cardSwiped=cardSwiped}}
   </div>
   <div class="row">
     <div class="col-md-9">
@@ -24,6 +25,10 @@
             pumpEnabled=pumpEnabled}}
         </div>
       </div>
+    </div>
+    <div>
+      {{card-swipe
+          swipeCard=(action 'swipeCard')}}
     </div>
     <div class="col-md-3">
       {{pump-keypad}}
