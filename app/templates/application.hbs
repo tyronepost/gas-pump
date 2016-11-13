@@ -9,6 +9,7 @@
   </div>
   <div class="row">
     {{pump-screen
+      zipCode=zipCode
       cardSwiped=cardSwiped}}
   </div>
   <div class="row">
@@ -31,7 +32,8 @@
           swipeCard=(action 'swipeCard')}}
     </div>
     <div class="col-md-3">
-      {{pump-keypad}}
+      {{pump-keypad
+        enterZip=(action 'enterZip')}}
     </div>
   </div>
 </div>

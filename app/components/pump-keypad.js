@@ -1,4 +1,9 @@
 import Ember from 'ember';
-
-export default Ember.Component.extend({
+const { Component, get } = Ember
+export default Component.extend({
+  actions: {
+    enterZip: function (char) {
+      get(this, 'enterZip')(char);
+    },
+  }
 });
