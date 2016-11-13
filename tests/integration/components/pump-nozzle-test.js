@@ -8,6 +8,5 @@ moduleForComponent('pump-nozzle', 'Integration | Component | pump nozzle', {
 test('it renders', function(assert) {
   this.render(hbs`{{pump-nozzle
                       pumpEnabled=false}}`);
-  let classNames = this.$().attr('class').split(' ');
   assert.ok(true);
 });
